@@ -13,6 +13,15 @@
 		5E3075E82426690900C673ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3075E62426690900C673ED /* Main.storyboard */; };
 		5E3075EA2426690B00C673ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3075E92426690B00C673ED /* Assets.xcassets */; };
 		5E3075ED2426690B00C673ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3075EB2426690B00C673ED /* LaunchScreen.storyboard */; };
+		5E3075F52426730E00C673ED /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3075F42426730E00C673ED /* Card.swift */; };
+		5E3075F82426778700C673ED /* SolitaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3075F72426778700C673ED /* SolitaireView.swift */; };
+		5E3075FB24267CED00C673ED /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3075FA24267CED00C673ED /* CardStack.swift */; };
+		5E3075FD24268DEE00C673ED /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3075FC24268DEE00C673ED /* CardStackView.swift */; };
+		5E3075FF24268E7200C673ED /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3075FE24268E7200C673ED /* Utils.swift */; };
+		5E30760124268EB500C673ED /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30760024268EB500C673ED /* Model.swift */; };
+		5E30760324268F1F00C673ED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30760224268F1F00C673ED /* CardView.swift */; };
+		5E30760624268F9700C673ED /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30760524268F9700C673ED /* Game.swift */; };
+		5E30760824268FF500C673ED /* images in Resources */ = {isa = PBXBuildFile; fileRef = 5E30760724268FF500C673ED /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		5E3075E92426690B00C673ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E3075EC2426690B00C673ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E3075EE2426690B00C673ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E3075F42426730E00C673ED /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5E3075F72426778700C673ED /* SolitaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolitaireView.swift; sourceTree = "<group>"; };
+		5E3075FA24267CED00C673ED /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		5E3075FC24268DEE00C673ED /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		5E3075FE24268E7200C673ED /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5E30760024268EB500C673ED /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5E30760224268F1F00C673ED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5E30760524268F9700C673ED /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5E30760724268FF500C673ED /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,46 @@
 			children = (
 				5E3075E02426690900C673ED /* AppDelegate.swift */,
 				5E3075E22426690900C673ED /* SceneDelegate.swift */,
-				5E3075E42426690900C673ED /* ViewController.swift */,
+				5E3075F62426733F00C673ED /* Model */,
+				5E3075F92426779700C673ED /* View */,
+				5E30760424268F7100C673ED /* Controller */,
 				5E3075E62426690900C673ED /* Main.storyboard */,
 				5E3075E92426690B00C673ED /* Assets.xcassets */,
+				5E30760724268FF500C673ED /* images */,
 				5E3075EB2426690B00C673ED /* LaunchScreen.storyboard */,
 				5E3075EE2426690B00C673ED /* Info.plist */,
+				5E3075FE24268E7200C673ED /* Utils.swift */,
 			);
 			path = Solitaire;
+			sourceTree = "<group>";
+		};
+		5E3075F62426733F00C673ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E30760024268EB500C673ED /* Model.swift */,
+				5E3075F42426730E00C673ED /* Card.swift */,
+				5E3075FA24267CED00C673ED /* CardStack.swift */,
+				5E30760524268F9700C673ED /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E3075F92426779700C673ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E3075F72426778700C673ED /* SolitaireView.swift */,
+				5E3075FC24268DEE00C673ED /* CardStackView.swift */,
+				5E30760224268F1F00C673ED /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E30760424268F7100C673ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E3075E42426690900C673ED /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E30760824268FF500C673ED /* images in Resources */,
 				5E3075ED2426690B00C673ED /* LaunchScreen.storyboard in Resources */,
 				5E3075EA2426690B00C673ED /* Assets.xcassets in Resources */,
 				5E3075E82426690900C673ED /* Main.storyboard in Resources */,
@@ -138,9 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E30760124268EB500C673ED /* Model.swift in Sources */,
+				5E3075F82426778700C673ED /* SolitaireView.swift in Sources */,
+				5E3075FD24268DEE00C673ED /* CardStackView.swift in Sources */,
 				5E3075E52426690900C673ED /* ViewController.swift in Sources */,
+				5E30760324268F1F00C673ED /* CardView.swift in Sources */,
+				5E3075FB24267CED00C673ED /* CardStack.swift in Sources */,
+				5E30760624268F9700C673ED /* Game.swift in Sources */,
 				5E3075E12426690900C673ED /* AppDelegate.swift in Sources */,
 				5E3075E32426690900C673ED /* SceneDelegate.swift in Sources */,
+				5E3075F52426730E00C673ED /* Card.swift in Sources */,
+				5E3075FF24268E7200C673ED /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
